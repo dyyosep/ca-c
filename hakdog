@@ -1,0 +1,38 @@
+package exercise;
+import java.util.Scanner;
+public class calculator {
+	public static void main(String[]args) {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Input first number");
+		int fn = in.nextInt();
+		System.out.println("Choose an operator: +,-,*,/");
+		char sign = in.next().charAt(0);
+		System.out.println("Input second number");
+		int sn = in.nextInt();
+		int result;
+		switch(sign) {
+		case ('+'):
+			result = fn+sn;
+		System.out.println("The result is "+result);
+		break;
+		case ('-'):
+			result = fn-sn;
+		System.out.println("The result is "+result);
+		break;
+		case ('/'):
+			result = fn/sn;
+		System.out.println("The result is "+result);
+		break;
+		case ('*'):
+			result = fn*sn;
+		System.out.println("The result is "+result);
+		break;
+	
+		default: 
+			System.out.println("idiot");
+		}
+
+		}
+}
+	
